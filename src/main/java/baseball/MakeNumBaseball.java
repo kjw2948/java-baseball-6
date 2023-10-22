@@ -6,13 +6,13 @@ import java.util.List;
 
 public class MakeNumBaseball {
     public List<Integer> makeRandom() {
-        List<Integer> computer = new ArrayList<>();
-        while (computer.size() < 3) {
+        List<Integer> computerNum = new ArrayList<>();
+        while (computerNum.size() < 3) {
             int randomNumber = Randoms.pickNumberInRange(1, 9);
-            if (!computer.contains(randomNumber)) {
-                computer.add(randomNumber);
+            if (!computerNum.contains(randomNumber)) {
+                computerNum.add(randomNumber);
             }
         }
-        return computer;
+        return computerNum;
     }
 }
